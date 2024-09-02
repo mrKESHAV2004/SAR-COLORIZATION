@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-image:url(/images/Synspective-1.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.450);
+  }
+  .navbar .container-fluid .nav-item a{
+    color: white;
+    font-size:20px;
+  }
+  .navbar .container-fluid .nav-item a:hover{
+    color: red;
+  }
+  .navbar .container-fluid .nav-item{
+    margin-right:40px ;
+  }
+  .main-healine{
+    padding: 40px;
+    width: 40%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .main-healine h1{
+    text-align: center;font-size: 100px;
+  }
+  .signup{
+    background-color: #173b66a7;
+    padding: 40px;
+    width: 40%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .signup button{
+    width: 50%;
+  }
+  .signup .button-signup:hover{
+    background-color: darkblue;
+  }
+  .resources{
+    background-color: #173b66a7;
+    padding: 40px;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 75vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+    font-weight: bold;
+  }
+  .resources .mb-3{
+    width: 50%;
+  }
+  .nav-tabs .nav-link{
+    color: white;
+  }
+  .nav-tabs .nav-link :active{
+    color: black;
+  }
+  
+  .resources .mb-3 img{
+    background-size: contain;
+  }
+  .resource-table{
+    padding: 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    body{
+      background-position: center;
+      overflow: hidden;
+    }
+    .main-healine{
+      padding: 2px;
+      background-color: rgba(240, 248, 255, 0.673);
+      width: 60%;
+      color: gray;
+    }
+    .main-healine h1{
+      font-size: 50px;
+    }
+    .signup {
+      width: 90%;
+    }
+    .resources{
+      width: 90%;
+      padding: 20px;
+      overflow-x: scroll;
+    }
+    .resources div{
+        display: flex;
+        flex-direction: column;
+    }
+    .resources .mb-3{
+        width: 100%;
+        font-size: 10px;
+    }
+    .resources .nav-tabs{
+      display: flex;
+    }
+    .resources .nav-tabs .nav-item button{
+      font-size: 20px;
+    }
+    .resources table{
+      width: 100%;
+      font-size: 10px;
+      padding: 3px;
+  }
+  .resource-table{
+    padding: 10px;
+  }
+}
