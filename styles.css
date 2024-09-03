@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    background-image:url(images/Synspective-1.jpg) ;
+    background-image:url('images/Synspective-1.jpg') ;
     background-size:cover;
     background-repeat: no-repeat;
     font-family: "Montserrat", sans-serif;
