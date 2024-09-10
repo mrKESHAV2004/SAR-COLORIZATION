@@ -44,6 +44,11 @@ body{
   .signup .button-signup:hover{
     background-color: darkblue;
   }
+  .map-slider{
+    padding: 40px;
+    width: 80vw;
+    height: 75vh;
+  }
   .resources{
     background-color: #173b66a7;
     padding: 40px;
@@ -54,10 +59,6 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     color: white;
-    font-weight: bold;
-  }
-  .resources .mb-3{
-    width: 50%;
   }
   .nav-tabs .nav-link{
     color: white;
@@ -72,7 +73,13 @@ body{
   .resource-table{
     padding: 30px;
   }
+  .tab-content{
+    padding: 20px;
+  }
   @media only screen and (max-width: 768px) {
+    .lib{
+      padding: 8px;
+    }
     body{
       background-position: center;
       overflow: hidden;
@@ -100,13 +107,18 @@ body{
     }
     .resources .mb-3{
         width: 100%;
-        font-size: 10px;
+    }
+    .resources .mb-6{
+        width: 100%;
+    }
+    .lib,.lib1{
+      font-size: 12px;
     }
     .resources .nav-tabs{
       display: flex;
     }
     .resources .nav-tabs .nav-item button{
-      font-size: 20px;
+      font-size: 15px;
     }
     .resources table{
       width: 100%;
@@ -115,5 +127,12 @@ body{
   }
   .resource-table{
     padding: 10px;
+  }
+  .tab-content{
+    padding: 5px;
+  }
+  .images{
+    width: 100%;
+    max-width: 300px;
   }
 }
