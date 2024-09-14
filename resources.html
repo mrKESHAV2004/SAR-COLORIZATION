@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/logo.png">
     <style>
-      th, td {
-        padding: 10px; /* This is equivalent to cellpadding */
-        text-align: left;
+    th, td {
+      padding: 10px;
+      text-align: left;
     }
     .lib{
       text-align: justify;
@@ -19,20 +19,24 @@
     }
     .lib1{
       text-align: justify;
-      display: flex; 
-      justify-content: center; 
+      display: flex;
+      justify-content: center;
       align-items: center;
     }
     .images{
       width: 100%;
       height: auto;
+      max-width: 450px;
+    }
+    img{
+      border-radius: 10px;
     }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand nav-link" href="index_2.html"><img src="images/logo.png" style="height: 8vh;margin-right: 40px;"></a>
+          <a class="navbar-brand nav-link" href="index_2.html"><img src="images/logo.png" style="height: 8vh;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -71,19 +75,19 @@
                 <div class="tab-pane fade show active" id="sar" role="tabpanel" aria-labelledby="sar-tab">
                   <div class="container" style="padding: 10px;">
                     <div class="row">
-                    <h5>What is SAR?</h5>
-                        <div class="col-12 col-md-6 mb-3 lib">
+                    <h5 class="hidden">What is SAR?</h5>
+                        <div class="col-12 col-md-6 mb-3 lib hidden">
                             <p style="text-align: justify;">Synthetic Aperture Radar (SAR) is a type of radar technology used to create highly detailed images of objects, landscapes, and surfaces, particularly for remote sensing applications. Unlike traditional radar, SAR can produce high-resolution images regardless of weather conditions, time of day, or atmospheric visibility, making it extremely valuable for a variety of applications.<br>
                             SAR image is an active microwave-based imaging. Being the wavlength longer, images are not affected by clouds, haze, and other
                             meteorological conditions that otherwise affect visible images.<br>
                             SAR images mainly reveal the structural
                             properties of the target scene, such as dielectric properties, surface roughness, and moisture content. Therefore, from SAR images it is possible to detect various objects based on their surface features containing rich spatial information</p>
                         </div>
-                        <div class="col-12 col-md-6 mb-3 lib" style="text-align: center;">
+                        <div class="col-12 col-md-6 mb-3 lib hidden" style="text-align: center;">
                             <img src="images/diagram.png" alt="SAR Image" style="background-color: white;" class="images">
                         </div>
-                    <h5>Breakdown of SAR</h5>
-                        <div class="col-12 col-md-6 mb-3 lib" style="flex: 1;text-align: justify;">
+                    <h5 class="hidden">Breakdown of SAR</h5>
+                        <div class="col-12 col-md-6 mb-3 lib hidden" style="flex: 1;text-align: justify;">
                             <p>
                                 <strong>Spatial Resolution and Antenna Size:</strong><br>
                                 <ul>
@@ -92,11 +96,11 @@
                                 </ul>
                             </p>
                         </div>
-                        <div class="col-12 col-md-6 mb-3 lib" style="text-align: center;padding: 0px 0px 10px 10px;">
+                        <div class="col-12 col-md-6 mb-3 lib hidden" style="text-align: center;padding: 0px 0px 10px 10px;">
                             <img src="images/microwave_bands.jpg" alt="Electromagnetic Spectrum" class="images">
                             <p style="margin-top: 10px;font-size: 8px;">The electromagnetic spectrum with microwave bands inset</p>
                         </div>
-                      <div class="col-12 col-md-12 mb-12 lib">
+                      <div class="col-12 col-md-12 mb-12 lib hidden">
                         <p><strong>Synthetic Aperture Solution:</strong><br>
                         <ul>
                             <li><strong>Impractical Antenna Size:</strong> Building and deploying a 4,250-meter-long antenna in space is not feasible.</li>
@@ -124,7 +128,7 @@
                             <h5>PYTHON LIBRARIES</h5>
                             <div class="container" style="padding: 10px;">
                               <div class="row">
-                                <div class="col-12 col-md-6 mb-3 lib">
+                                <div class="col-12 col-md-6 mb-3 lib hidden">
                                   <p>
                                     1. NumPy<br>
                                     NumPy is the foundation for numerical computing in Python. It provides powerful multi-dimensional arrays and a large library of mathematical functions for handling numerical data efficiently.<br>
@@ -137,7 +141,7 @@
                                     </ul>
                                   </p>
                                 </div>
-                                <div class="col-12 col-md-6 mb-3 lib">
+                                <div class="col-12 col-md-6 mb-3 lib hidden">
                                   <p>
                                     2. Scipy<br>
                                     SciPy is built on top of NumPy and offers additional functionality for scientific computing, including optimization, integration, interpolation, and signal processing.<br>
@@ -150,7 +154,7 @@
                                     </ul>
                                   </p>
                                 </div>
-                                <div class="col-12 col-md-6 mb-3 lib">
+                                <div class="col-12 col-md-6 mb-3 lib hidden">
                                   <p>
                                     3. PyTorch<br>
                                     PyTorch is a deep learning library widely used for research and production. It provides tensor computation with GPU acceleration and automatic differentiation (autograd) for building neural networks.<br>
@@ -163,7 +167,7 @@
                                     </ul>
                                   </p>
                                 </div>
-                                <div class="col-12 col-md-6 mb-3 lib">
+                                <div class="col-12 col-md-6 mb-3 lib hidden">
                                   <p>
                                     4. TenserFlow<br>
                                     TensorFlow is a comprehensive library for machine learning, offering both research and production capabilities. It supports deep learning, distributed training, and deployment across various platforms, including mobile and edge devices.<br>
@@ -176,7 +180,7 @@
                                     </ul>
                                   </p>
                                 </div>
-                                <div class="col-12 col-md-6 mb-3 lib">
+                                <div class="col-12 col-md-6 mb-3 lib hidden">
                                   <p>
                                     5. Matplotlib<br>
                                     Matplotlib is a plotting library in Python that allows you to create a wide range of static, animated, and interactive visualizations. It is often used in conjunction with NumPy and SciPy for visualizing data.<br>
@@ -189,7 +193,7 @@
                                     </ul>
                                   </p>
                                 </div>
-                                <div class="col-12 col-md-6 mb-3 lib">
+                                <div class="col-12 col-md-6 mb-3 lib hidden">
                                   <p>
                                     6. Scikit-learn<br>
                                     scikit-learn is a powerful, open-source machine learning library in Python.It is widely used for building both simple and complex machine learning models, and it offers tools for classification, regression, clustering, dimensionality reduction, model selection, and preprocessing.<br>
@@ -207,7 +211,7 @@
                         </div>
                         <div class="tab-pane fade show" id="mod" role="tabpanel" aria-labelledby="mod-tab">
                             <table>
-                              <thead style="border-bottom: 1px solid white;">
+                              <thead style="border-bottom: 1px solid white;" class="hidden">
                                 <tr>
                                   <th>Model Type</th>
                                   <th>Model Name</th>
@@ -219,7 +223,7 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                <tr style="border-bottom: 1px solid white;">
+                                <tr style="border-bottom: 1px solid white;" class="hidden">
                                   <td>LAR-RGB</td>
                                   <td>-</td>
                                   <td>Paired SAR images with corresponding color data</td>
@@ -228,7 +232,7 @@
                                   <td>Low</td>
                                   <td>High (simple computation)</td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid white;">
+                                <tr style="border-bottom: 1px solid white;" class="hidden">
                                   <td rowspan="2">CNN Models</td>
                                   <td>U-Net</td>
                                   <td>Paired SAR and color images</td>
@@ -237,7 +241,7 @@
                                   <td>Moderate</td>
                                   <td>High (can scale with larger datasets)</td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid white;">
+                                <tr style="border-bottom: 1px solid white;" class="hidden">
                                   <td>ResNet</td>
                                   <td>Paired SAR and color images</td>
                                   <td>Long (deep network training)</td>
@@ -245,7 +249,7 @@
                                   <td>High (due to deep architecture)</td>
                                   <td>Moderate (more computational resources needed)</td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid white;">
+                                <tr style="border-bottom: 1px solid white;" class="hidden">
                                   <td rowspan="2">GANs Models</td>
                                   <td>Pix2Pix</td>
                                   <td>Paired SAR and color images</td>
@@ -254,7 +258,7 @@
                                   <td>High</td>
                                   <td>Moderate (resource intensive)</td>
                                 </tr>
-                                <tr style="border-bottom: 1px solid white;">
+                                <tr style="border-bottom: 1px solid white;" class="hidden">
                                   <td>CycleGAN</td>
                                   <td>Unpaired SAR and color images</td>
                                   <td>Long (training two GANs)</td>
@@ -269,7 +273,7 @@
                             <div class="container">
                                 <div class="row">
                                   <h3>RBG-LAB Coversion Model</h3>
-                                    <div class="col-12 col-md-6 mb-3 lib">
+                                    <div class="col-12 col-md-6 mb-3 lib hidden">
                                       <h5>RGB</h5>
                                       <ul>
                                         <li><strong>Stands for: </strong>Red, Green, Blue</li>
@@ -281,12 +285,12 @@
                                         </li>
                                       </ul>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib" style="text-align: center;">
-                                      <img src="images/rbg.jpg" class="images" style="width: 400px;">
+                                    <div class="col-12 col-md-6 mb-3 lib hidden" style="text-align: center;">
+                                      <img src="images/rbg.jpg" style="width: 80%;">
                                       <p style="margin-top: 10px;font-size: 8px;">RBG COLOR PALLETTE</p>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib">
-                                      <h5>LAB</h5>
+                                    <div class="col-12 col-md-6 mb-3 lib hidden">
+                                      <h5 class="hidden">LAB</h5>
                                       <ul>
                                         <li><strong>Stands for: </strong>Lightness (L), A (green to red), and B (blue to yellow)</li>
                                         <li><strong>Nature: </strong>Perceptually uniform color model, meaning changes in LAB values are intended to correspond more closely to human perception of color differences.</li>
@@ -301,49 +305,49 @@
                                         </li>
                                       </ul>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib" style="text-align: center;">
-                                      <img src="images/LAB-graph.png" class="images">
-                                        <p style="margin-top: 10px;font-size: 8px;">LAB COLOR SPACE</p>
+                                    <div class="col-12 col-md-6 mb-3 lib hidden" style="text-align: center;">
+                                      <img src="images/LAB-graph.png" style="width: 100%;">
+                                      <p style="margin-top: 10px;font-size: 8px;">LAB COLOR SPACE</p>
                                     </div>
-                                    <h4>HOW THIS MODEL WORKS?</h4>
-                                    <div class="col-12 col-md-6 mb-3 lib1">
+                                    <h4 class="hidden">HOW THIS MODEL WORKS?</h4>
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden">
                                       <p><strong>1. Using RGB LAB Conversion</strong><br>
                                         A ImgeNet Database can be used a source for RGB color space data and this RBG images need to be converted into LAB color space
                                         </p>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib1"><img src="images/step1.png" style="width: 100%;"></div>
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden"><img src="images/step1.png" style="width: 100%;"></div>
 
-                                    <div class="col-12 col-md-6 mb-3 lib1">
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden">
                                       <p>
                                         <strong>2. Extracting the L Channel (Grayscale Image)</strong><br>
                                         Once an RGB image is converted into LAB format, the L channel is isolated. This L channel acts like a grayscale image because it only contains intensity information (brightness) without any color.
                                       </p>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib1"><img src="images/step2.png" style="width: 100%;"></div>
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden"><img src="images/step2.png" style="width: 100%;"></div>
 
-                                    <div class="col-12 col-md-6 mb-3 lib1">
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden">
                                       <p>
                                         <strong>3. Training the DL network using L channel</strong><br>
                                         This L channel is used as the input for the neural network to train the model. Since it's effectively a grayscale image, the model can learn pixel intensity and brightness information.
                                 
                                       </p>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib1"><img src="images/step3.png" style="width: 100%;"></div>
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden"><img src="images/step3.png" style="width: 100%;"></div>
 
-                                    <div class="col-12 col-md-6 mb-3 lib1">
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden">
                                       <p>
                                         <strong>4. Combine the L chnnnel and Predicted ab chnnel data</strong><br>
                                       Once the model has been trained, for any new grayscale (L channel) input image, the network can predict the missing A and B channels. These channels contain the color information that will be combined with the L channel to form the color image.
                                       </p>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib1"><img src="images/step4.png" style="width: 100%;"></div>
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden"><img src="images/step4.png" style="width: 100%;"></div>
 
-                                    <div class="col-12 col-md-6 mb-3 lib1">
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden">
                                       <p><strong>5. Convert the LAB image into RGB image</strong><br>The LAB image is then converted back to RGB to produce a fully colorized image.
                                       </p>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3 lib1"><img src="images/step5.png" style="width: 100%;"></div>
-                                    <div class="results">
+                                    <div class="col-12 col-md-6 mb-3 lib1 hidden"><img src="images/step5.png" style="width: 100%;"></div>
+                                    <div class="results hidden">
                                       <h3>FEW RESULTS</h3>
                                       <div class="container">
                                         <div class="row">
@@ -365,7 +369,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade resource-table" id="isro" role="tabpanel" aria-labelledby="isro-tab">
-                    <table>
+                    <table class="hidden">
                         <thead style="border-bottom: 1px solid white;">
                             <tr>
                                 <th>Satellite</th>
@@ -464,4 +468,6 @@
                 </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
+</html>
