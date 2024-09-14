@@ -19,12 +19,17 @@ body{
     margin-right:40px ;
   }
   .main-healine{
-    padding: 40px;
-    width: 40%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     color: white;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 8 25px 23px rgba(0, 0, 0, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.061);
+    border-radius: 8px;
+    width: 30%;
   }
   .main-healine h1{
     text-align: center;font-size: 100px;
@@ -76,6 +81,31 @@ body{
   .tab-content{
     padding: 20px;
   }
+  .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateZ(100%);
+    transition: all 1.5s;
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateZ(0);
+  }
+  .text{
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 2s steps(6),cursor .6s step-end infinite alternate;
+    width: 100%;
+}
+@keyframes cursor{
+    50%{border-color:transparent ;}
+}
+@keyframes typing{
+    from{width: 0;}
+}
+
   @media only screen and (max-width: 768px) {
     .lib{
       padding: 8px;
@@ -86,9 +116,7 @@ body{
     }
     .main-healine{
       padding: 2px;
-      background-color: rgba(240, 248, 255, 0.673);
       width: 60%;
-      color: gray;
     }
     .main-healine h1{
       font-size: 50px;
